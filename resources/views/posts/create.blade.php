@@ -18,6 +18,7 @@
                     @foreach ($post_categories as $post_category)
                         <option value="{{ $post_category->id }}" >
                             {{ $post_category->name }}
+                           <!--<input name="post[post_category_name]">-->
                         </option>
                     @endforeach
                 </select>
@@ -29,7 +30,7 @@
             </div>
             <div class="body">
                 <h2>Body</h2>
-                <textarea name="post[body]" placeholder="今日も1日お疲れさまでした。"></textarea>
+                <textarea name="post[body]" placeholder="今日もきれい！"></textarea>
             </div>
             <input type="submit" value="store">
         </form>

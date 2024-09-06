@@ -4,12 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Comment;
+use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
-    public function index(Comment $comment)//インポートしたPostをインスタンス化して$postとして使用。
+    
+    public function create(Post $post)//インポートしたPostをインスタンス化して$postとして使用。
     {
-        return $comment->get();//$postの中身を戻り値にする。
+        return view('comments.create')->with(['post' => $post]);
+    }
+
+    public function store(Request $request, Comment $comment)
+    {
+        $input = $request['comment'];
+        $id = Auth::id();
+        $input['user_id'] = $id;
+        $comment->fill($input)->save();
+        // return redirect('/comments/' . $comment->id);
+        return redirect('/');
     }
 }

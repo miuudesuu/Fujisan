@@ -24,19 +24,20 @@
             <a href='/posts/create'>create</a>
             <div class='posts'>
                 @foreach ($posts as $post)
-                -
+                ---
                     <div class='post'>
-                        <h2 class='title'>{{ $post->title }}</h2>
-                        <p>{{ Auth::user()->name }}</p>
-                        <p class='body'>{{ $post->body }}</p>
+                        <a href='/posts/{{$post->id}}'><h2 class='title'>title: {{ $post->title }}</h2></a>
+                        <p>user name: {{ Auth::user()->name }}</p>
+                        <p class='body'>body: {{ $post->body }}</p>
                     </div>
                     <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post">
                         @csrf
                         @method('DELETE')
                         <button type="button" onclick="deletePost({{ $post->id }})">delete</button> 
                     </form>
-                @endforeach
-                <a href='/comments'>commnent</a>
+                    <br>
+                <a href='/comments/create/{{$post->id}}'>commnent</a><br>
+                 @endforeach
                ログインユーザー：{{ Auth::user()->name }}
             </div>
         </body>

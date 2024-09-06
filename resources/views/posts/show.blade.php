@@ -9,13 +9,20 @@
     </head>
     <body>
         <h1 class="title">
-            {{ $post->title }}
+            タイトル: {{ $post->title }}
         </h1>
         <div class="content">
             <div class="content__post">
-                <h3>本文</h3>
-                <p>{{ $post->body }}</p>    
+                <p>本文: {{ $post->body }}</p>
             </div>
+        </div>
+        <div class="comment">
+        @foreach ($comments as $comment)
+            @if($post->id == $comment->post_id)
+                <p>コメント: {{$comment->body}}</p>
+                <p>{{$comment->post_id}}</p>
+            @endif
+        @endforeach
         </div>
         <div class="footer">
             <div class="edit"><a href="/posts/{{ $post->id }}/edit">編集</a></div>

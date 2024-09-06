@@ -12,13 +12,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/posts/create', [PostController::class, 'create']);
-Route::get('/posts/{post}', [PostController::class ,'show']);
-Route::post('/posts', [PostController::class, 'store']);
-Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
-Route::put('/posts/{post}', [PostController::class, 'update']);
-Route::delete('/posts/{post}', [PostController::class,'delete']);
-
 Route::controller(PostController::class)->middleware(['auth'])->group(function(){
     Route::get('/', 'index')->name('index');
     Route::post('/posts', 'store')->name('store');
@@ -36,11 +29,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::controller(CommentController::class)->group(function(){
+    Route::get('/comments/create/{post}','create')->name('create'); 
+    Route::post('/comments','store')->name('store');
+});
 
-Route::get('/posts/{post}', [PostController::class ,'show']);
-// '/posts/{対象データのID}'にGetリクエストが来たら、PostControllerのshowメソッドを実行する
-
-
-Route::get('/comments', [CommentController::class, 'index']); 
 
 require __DIR__.'/auth.php';

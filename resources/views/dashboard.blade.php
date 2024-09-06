@@ -14,4 +14,10 @@
             </div>
         </div>
     </div>
+    <div class="rules">
+        <a href='/rules/'>rules</a>
+    </div>
+    <div class="hut">
+        <a href='/huts/'>huts</a>
+    </div>
 </x-app-layout>
