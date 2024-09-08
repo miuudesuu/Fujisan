@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\PostCategory;
+use App\Models\Comment;
 use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
@@ -14,9 +15,9 @@ class PostController extends Controller
         return view('posts.index')->with(['posts' => $post->get()]);
     }
     
-    public function show(Post $post)
+    public function show(Post $post,Comment $comment)
     {
-        return view('posts.show')->with(['post' => $post]);
+        return view('posts.show')->with(['post' => $post,'comments' => $comment->get()]);
      //'post'はbladeファイルで使う変数。中身は$postはid=1のPostインスタンス。
     }
     public function create(PostCategory $post_category)

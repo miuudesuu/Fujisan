@@ -14,6 +14,16 @@ class Post extends Model
             return $this->orderBy('updated_at', 'DESC')->limit($limit_count)->getBylimit();
         } 
         
+        public function post_category()
+        {
+            return $this->belongsTo(PostCategory::class);
+        }
+        
+        public function comments()
+        {
+            return $this->hasMany(Comment::class);
+        }
+        
         protected $fillable = [
             'user_id',
             'post_category_id',
