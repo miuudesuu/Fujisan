@@ -18,7 +18,6 @@
                     @foreach ($post_categories as $post_category)
                         <option value="{{ $post_category->id }}" >
                             {{ $post_category->name }}
-                           <!--<input name="post[post_category_name]">-->
                         </option>
                     @endforeach
                 </select>

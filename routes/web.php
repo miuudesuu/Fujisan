@@ -2,8 +2,13 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\RuleController;
+use App\Http\Controllers\HutController;
+use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\AnswerController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -33,6 +38,19 @@ Route::controller(CommentController::class)->group(function(){
     Route::get('/comments/create/{post}','create')->name('create'); 
     Route::post('/comments','store')->name('store');
 });
+
+Route::get('/rules', [RuleController::class,'index']);
+
+Route::get('/huts', [HutController::class,'index']);
+
+Route::get('/questions', [QuestionController::class,'index']);
+Route::get('/questions/create', [QuestionController::class,'create']);
+Route::post('/questions', [QuestionController::class, 'store']);
+Route::get('/questions/{question}/edit', [QuestionController::class, 'edit']);
+Route::delete('/questions/{question}', [QuestionController::class, 'delete']);
+
+Route::get('/answers/create/{question}', [AnswerController::class, 'create']);
+Route::post('/answers', [AnswerController::class, 'store']);
 
 
 require __DIR__.'/auth.php';

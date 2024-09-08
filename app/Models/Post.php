@@ -19,9 +19,9 @@ class Post extends Model
             return $this->belongsTo(PostCategory::class);
         }
         
-        public function comment()
+        public function comments()
         {
-            return $this->belongsTo(Comment::class);
+            return $this->hasMany(Comment::class);
         }
         
         protected $fillable = [

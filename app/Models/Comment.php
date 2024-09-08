@@ -14,9 +14,9 @@ class Comment extends Model
             return $this->orderBy('updated_at', 'DESC')->limit($limit_count)->getBylimit();
         } 
         
-        public function posts()   
+        public function post()   
         {
-            return $this->hasMany(Post::class);  
+            return $this->belongsTo(Post::class);  
         }
                 
         protected $fillable = [

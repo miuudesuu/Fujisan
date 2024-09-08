@@ -36,7 +36,7 @@
                         <button type="button" onclick="deletePost({{ $post->id }})">delete</button> 
                     </form>
                     <br>
-                <a href='/comments/create/{{$post->id}}'>commnent</a><br>
+                <a href='/comments/create/{{$post->id}}'>commnents</a><br>
                  @endforeach
                ログインユーザー：{{ Auth::user()->name }}
             </div>

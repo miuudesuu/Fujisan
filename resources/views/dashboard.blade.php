@@ -15,9 +15,12 @@
         </div>
     </div>
     <div class="rules">
-        <a href='/rules/'>rules</a>
+        <a href='/rules'>rules</a>
     </div>
     <div class="hut">
-        <a href='/huts/'>huts</a>
+        <a href='/huts'>huts</a>
+    </div>
+    <div class="question">
+        <a href='/questions'>questions</a>
     </div>
 </x-app-layout>
