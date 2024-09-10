@@ -46,11 +46,16 @@ Route::get('/huts', [HutController::class,'index']);
 Route::get('/questions', [QuestionController::class,'index']);
 Route::get('/questions/create', [QuestionController::class,'create']);
 Route::post('/questions', [QuestionController::class, 'store']);
+Route::get('/questions/{question}', [QuestionController::class, 'show']);
 Route::get('/questions/{question}/edit', [QuestionController::class, 'edit']);
+Route::put('/questions/{question}',  [QuestionController::class, 'update']);
 Route::delete('/questions/{question}', [QuestionController::class, 'delete']);
+
 
 Route::get('/answers/create/{question}', [AnswerController::class, 'create']);
 Route::post('/answers', [AnswerController::class, 'store']);
+
+Route::get('/weathers}', [WeatherController::class, 'index']);
 
 
 require __DIR__.'/auth.php';

@@ -9,6 +9,11 @@
         質問回答
     </x-slot>
     <body>
+  　<style>
+        body{
+            margin:20px
+        }
+    </style>
         <h1>Blog Name</h1>
         <form action="/answers" method="POST">
             @csrf
@@ -20,7 +25,7 @@
             <input type="submit" value="store">
         </form>
         <div class="footer">
-            <a href="/">戻る</a>
+            <a href="/questions">戻る</a>
         </div>
     </body>
     </x-app-layout>

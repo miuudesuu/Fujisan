@@ -11,6 +11,11 @@
         huts
     </x-slot>
         <body>
+  　<style>
+        body{
+            margin:20px
+        }
+    </style>
             <h1>Blog Name</h1>
                 <div class='huts'>
                     @foreach($huts as $hut)
