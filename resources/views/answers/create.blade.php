@@ -20,7 +20,7 @@
             <input type="submit" value="store">
         </form>
         <div class="footer">
-            <a href="/">戻る</a>
+            <a href="/questions">戻る</a>
         </div>
     </body>
     </x-app-layout>

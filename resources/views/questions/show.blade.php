@@ -9,23 +9,22 @@
     </head>
     <body>
         <h1 class="title">
-            タイトル: {{ $post->title }}
+            タイトル: {{ $question->title }}
         </h1>
         <div class="content">
             <div class="content__post">
-                <p>本文: {{ $post->body }}</p>
+                <p>本文: {{ $question->body }}</p>
             </div>
         </div>
-        <div class="comment">
-        @foreach ($comments as $comment)
-            @if($post->id == $comment->post_id)
-                <p>コメント: {{$comment->body}}</p>
-                <p>{{$comment->post_id}}</p>
+        <div class="answer">
+        @foreach ($answers as $answer)
+            @if($question->id == $answer->question_id)
+                <p>コメント: {{$answer->body}}</p>
             @endif
         @endforeach
         </div>
         <div class="footer">
-            <div class="edit"><a href="/posts/{{ $post->id }}/edit">編集</a></div>
-            <a href="/">戻る</a>
+            <div class="edit"><a href="/questions/{{ $question->id }}/edit">編集</a></div>
+            <a href="/questions">戻る</a>
         </div>
     </body>

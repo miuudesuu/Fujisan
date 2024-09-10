@@ -44,8 +44,9 @@ Route::get('/rules', [RuleController::class,'index']);
 Route::get('/huts', [HutController::class,'index']);
 
 Route::get('/questions', [QuestionController::class,'index']);
-Route::get('/questions/create', [QuestionController::class,'create']);
 Route::post('/questions', [QuestionController::class, 'store']);
+Route::get('/questions/create', [QuestionController::class,'create']);
+Route::get('/questions/{question}', [QuestionController::class,'show']);
 Route::get('/questions/{question}/edit', [QuestionController::class, 'edit']);
 Route::delete('/questions/{question}', [QuestionController::class, 'delete']);
 Route::put('/questions/{question}', [QuestionController::class, 'update']);

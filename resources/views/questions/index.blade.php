@@ -27,7 +27,11 @@
                 ---
                     <div class='question'>
                         <a href='/questions/{{$question->id}}'><h2 class='title'>title: {{ $question->title }}</h2></a>
-                        <p>user name: {{ Auth::user()->name }}</p>
+                        @foreach ($users as $user)
+                            @if($user->id == $question->user_id)
+                                <p>投稿者: {{$user->name}}</p>
+                            @endif
+                        @endforeach
                         @foreach($question_categories as $question_category)
                             @if($question_category->id == $question->question_catgory_id)
                                 <p>category:  {{$question_category->name}}</p>

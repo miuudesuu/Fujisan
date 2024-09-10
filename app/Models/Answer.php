@@ -21,7 +21,8 @@ class Answer extends Model
             
     protected $fillable = [
             'user_id',
-            'post_id',
+            'question_id',
             'body',
+            
     ];
 }
