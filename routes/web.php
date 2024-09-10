@@ -48,6 +48,7 @@ Route::get('/questions/create', [QuestionController::class,'create']);
 Route::post('/questions', [QuestionController::class, 'store']);
 Route::get('/questions/{question}/edit', [QuestionController::class, 'edit']);
 Route::delete('/questions/{question}', [QuestionController::class, 'delete']);
+Route::put('/questions/{question}', [QuestionController::class, 'update']);
 
 Route::get('/answers/create/{question}', [AnswerController::class, 'create']);
 Route::post('/answers', [AnswerController::class, 'store']);
