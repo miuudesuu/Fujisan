@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('ホーム') }}
         </h2>
     </x-slot>
 
@@ -14,13 +14,5 @@
             </div>
         </div>
     </div>
-    <div class="rules">
-        <a href='/rules'>rules</a>
-    </div>
-    <div class="hut">
-        <a href='/huts'>huts</a>
-    </div>
-    <div class="question">
-        <a href='/questions'>questions</a>
-    </div>
+
 </x-app-layout>

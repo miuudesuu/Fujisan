@@ -11,7 +11,9 @@
         rules
     </x-slot>
         <body>
-            <h1>Blog Name</h1>
+            <h1>目次</h1>
+            <h2>1,富士山にのぼるひとへ
+            <p></p>
                 <div class='rules'>
                     @foreach($rules as $rule)
                 ---

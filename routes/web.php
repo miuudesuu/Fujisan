@@ -8,6 +8,7 @@ use App\Http\Controllers\RuleController;
 use App\Http\Controllers\HutController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\AnswerController;
+use App\Http\Controllers\CourseController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -43,6 +44,8 @@ Route::get('/rules', [RuleController::class,'index']);
 
 Route::get('/huts', [HutController::class,'index']);
 
+Route::get('/courses', [CourseController::class,'index']);
+
 Route::get('/questions', [QuestionController::class,'index']);
 Route::post('/questions', [QuestionController::class, 'store']);
 Route::get('/questions/create', [QuestionController::class,'create']);
@@ -53,6 +56,8 @@ Route::put('/questions/{question}', [QuestionController::class, 'update']);
 
 Route::get('/answers/create/{question}', [AnswerController::class, 'create']);
 Route::post('/answers', [AnswerController::class, 'store']);
+
+Route::get('/weathers', [WeatherController::class,'index']);
 
 
 require __DIR__.'/auth.php';
