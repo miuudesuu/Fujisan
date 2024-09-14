@@ -16,11 +16,11 @@
                         {{ __('ホーム') }}
                     </x-nav-link>
                     
-                    <x-nav-link :href="rule.index"  :active="request()->routeIs('rule.index')">
+                    <x-nav-link :href="route('rule.index')"  :active="request()->routeIs('rule.index')">
                         {{ __('初めて登る人へ') }}
                     </x-nav-link>
                     
-                    <x-nav-link :href="course.index"  :active="request()->routeIs('course.index')">
+                    <x-nav-link :href="route('course.index')"  :active="request()->routeIs('course.index')">
                         {{ __('登山ルート') }}
                     </x-nav-link>
                     
@@ -28,11 +28,11 @@
                         {{ __('富士山投稿') }}
                     </x-nav-link>
                     
-                    <x-nav-link :href="huts.index" :active="request()->routeIs('hut.index')" >
+                    <x-nav-link :href="route('hut.index')" :active="request()->routeIs('hut.index')" >
                         {{ __('山小屋情報') }}
                     </x-nav-link>
                     
-                    <x-nav-link :href="question.index" :active="request()->routeIs('question.index')" >
+                    <x-nav-link :href="route('question.index')" :active="request()->routeIs('question.index')" >
                         {{ __('Q&A') }}
                     </x-nav-link>
                 </div>
