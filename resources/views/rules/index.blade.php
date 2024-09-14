@@ -19,6 +19,11 @@
                 ---
                     <div class='rule'>
                         <h2 class='title'>title: {{$rule->title}}</h2>
+                        @foreach($users as $user)
+                            @if($rule->user_id == $user->id)
+                                <p>作成者: {{$user->name}}</p>
+                            @endif
+                        @endforeach
                         @foreach($rule_categories as $rule_category)
                             @if($rule->rule_category_id == $rule_category->id)
                                 <p>コメント: {{$rule_category->name}}</p>

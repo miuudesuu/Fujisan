@@ -20,18 +20,19 @@
         質問箱
     </x-slot>
         <body>
+  　<style>
+        body{
+            margin:20px
+        }
+    </style>
             <h1>Blog Name</h1>
             <a href='/questions/create'>create</a>
             <div class='questions'>
                 @foreach ($questions as $question)
                 ---
                     <div class='question'>
-                        <a href='/questions/{{$question->id}}'><h2 class='title'>title: {{ $question->title }}</h2></a>
-                        @foreach ($users as $user)
-                            @if($user->id == $question->user_id)
-                                <p>投稿者: {{$user->name}}</p>
-                            @endif
-                        @endforeach
+                        <a href='/questions/{{$question->id}}'>
+                            <h2 class='title'><a href="/questions/{{ $question->id }}">title: {{ $question->title }}</h2></a>
                         @foreach($question_categories as $question_category)
                             @if($question_category->id == $question->question_catgory_id)
                                 <p>category:  {{$question_category->name}}</p>

@@ -15,13 +15,13 @@ class AnswerController extends Controller
         return view('answers.create')->with(['question' => $question]);
     }
 
-    public function store(Request $request, Answer $answer)
+    public function store(Request $request, Answer $answer,Question $question)
     {
         $input = $request['answer'];
         $id = Auth::id();
         $input['user_id'] = $id;
         $answer->fill($input)->save();
         // return redirect('/comments/' . $comment->id);
-        return redirect('/questions/' );
+        return redirect('/questions');
     }
 }

@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
-        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <script>
@@ -20,6 +19,11 @@
         投稿
     </x-slot>
         <body>
+    <style>
+        body{
+            margin:20px
+        }
+    </style>
             <h1>Blog Name</h1>
             <a href='/posts/create'>create</a>
             <div class='posts'>

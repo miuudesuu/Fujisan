@@ -40,24 +40,26 @@ Route::controller(CommentController::class)->group(function(){
     Route::post('/comments','store')->name('store');
 });
 
-Route::get('/rules', [RuleController::class,'index']);
+Route::get('/rules', [RuleController::class,'index'])->name('rule.index');
 
-Route::get('/huts', [HutController::class,'index']);
+Route::get('/huts', [HutController::class,'index'])->name('hut.index');
 
-Route::get('/courses', [CourseController::class,'index']);
+Route::get('/courses', [CourseController::class,'index'])->name('course.index');
 
-Route::get('/questions', [QuestionController::class,'index']);
+Route::get('/questions', [QuestionController::class,'index'])->name('question.index');
 Route::post('/questions', [QuestionController::class, 'store']);
 Route::get('/questions/create', [QuestionController::class,'create']);
 Route::get('/questions/{question}', [QuestionController::class,'show']);
 Route::get('/questions/{question}/edit', [QuestionController::class, 'edit']);
+Route::put('/questions/{question}',  [QuestionController::class, 'update']);
 Route::delete('/questions/{question}', [QuestionController::class, 'delete']);
 Route::put('/questions/{question}', [QuestionController::class, 'update']);
+
 
 Route::get('/answers/create/{question}', [AnswerController::class, 'create']);
 Route::post('/answers', [AnswerController::class, 'store']);
 
-Route::get('/weathers', [WeatherController::class,'index']);
+Route::get('/weathers', [WeatherController::class,'index'])->name('weather.index');
 
 
 require __DIR__.'/auth.php';

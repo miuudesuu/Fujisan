@@ -6,15 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\Question;
 use App\Models\QuestionCategory;
 use App\Models\Answer;
-use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class QuestionController extends Controller
 {
-    public function index(Question $question, QuestionCategory $question_category, User $user)
+    public function index(Question $question, QuestionCategory $question_category)//インポートしたPostをインスタンス化して$postとして使用。
     {
-        return view('questions.index')->with(['questions' => $question->get(),'question_categories' => $question_category->get(),'users' => $user->get()]);  
-       //blade内で使う変数'posts'と設定。'posts'の中身にgetを使い、インスタンス化した$postを代入。
+        return view('questions.index')->with(['questions' => $question->get(),'question_categories' => $question_category->get()]);
     }
     public function show(Question $question,Answer $answer)
     {
@@ -23,8 +21,7 @@ class QuestionController extends Controller
     }
     public function create(QuestionCategory $question_category)
     {
-        return view('questions.create')->with(['question_categories' => $question_category->get()]);  
-       //blade内で使う変数'posts'と設定。'posts'の中身にgetを使い、インスタンス化した$postを代入。
+        return view('questions.create')->with(['question_categories' => $question_category->get()]);
     }
     public function store(Request $request, Question $question)
     {
@@ -33,23 +30,24 @@ class QuestionController extends Controller
         $id = Auth::id();
         $input['user_id'] = $id;
         $question->fill($input)->save();
-        return redirect('/questions/');
-    }
-    public function edit(Question $question, QuestionCategory $question_category)
-    {
-        return view('questions.edit')->with(['question' => $question,'question_categories'=>$question_category->get()]);
+        return redirect('/questions/' . $question->id);
     }
     public function update(Request $request, Question $question)
     {
         $input_post = $request['question'];
         $question->fill($input_post)->save();
     
-        return redirect('/questions/');
+        return redirect('/questions/' . $question->id);
     }
+    
+    public function edit(Question $question, QuestionCategory $question_category)
+    {
+        return view('questions.edit')->with(['question' => $question,'question_categories' => $question_category->get()]);
+    }
+    
     public function delete(Question $question)
     {
         $question->delete();
         return redirect('/questions');
     }
-
 }
