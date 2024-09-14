@@ -6,14 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\PostCategory;
 use App\Models\Comment;
-use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
-    public function index(Post $post,User $user)//インポートしたPostをインスタンス化して$postとして使用。
+    public function index(Post $post)//インポートしたPostをインスタンス化して$postとして使用。
     {
-        return view('posts.index')->with(['posts' => $post->get(),'users' => $user->get()]);
+        return view('posts.index')->with(['posts' => $post->get()]);
     }
     
     public function show(Post $post,Comment $comment)

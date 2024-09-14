@@ -12,8 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('answers', function (Blueprint $table) {
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');   
-        //'category_id' は 'categoriesテーブル' の 'id' を参照する外部キーです
+            $table->foreignId('question_id')->constrained()->onDelete('cascade');   
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); 
+        //
         });
     }
 
