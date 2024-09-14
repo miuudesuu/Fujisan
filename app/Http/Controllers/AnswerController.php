@@ -22,6 +22,8 @@ class AnswerController extends Controller
         $input['user_id'] = $id;
         $answer->fill($input)->save();
         // return redirect('/comments/' . $comment->id);
-        return redirect('/questions/' );
+
+        return redirect('/questions');
+
     }
 }

@@ -9,6 +9,11 @@
         comment_create
     </x-slot>
     <body>
+  　<style>
+        body{
+            margin:20px
+        }
+    </style>
         <h1>Blog Name</h1>
         <form action="/comments" method="POST">
             @csrf

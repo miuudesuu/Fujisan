@@ -8,6 +8,11 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
+  　<style>
+        body{
+            margin:20px
+        }
+    </style>
         <h1 class="title">
             タイトル: {{ $post->title }}
         </h1>

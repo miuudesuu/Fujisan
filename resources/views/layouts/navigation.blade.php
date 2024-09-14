@@ -13,27 +13,13 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('ホーム') }}
+                        {{ __('Dashboard') }}
                     </x-nav-link>
-                    
-                    <x-nav-link a href="/rules"  :active="request()->routeIs('rule')">
+                    <x-nav-link a href='/rules'>
                         {{ __('初めて登る人へ') }}
                     </x-nav-link>
-                    
-                    <x-nav-link a href="/courses"  :active="request()->routeIs('course')">
-                        {{ __('登山ルート') }}
-                    </x-nav-link>
-                    
                     <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
-                        {{ __('富士山投稿') }}
-                    </x-nav-link>
-                    
-                    <x-nav-link a href="/huts" :active="request()->routeIs('hut')" >
-                        {{ __('山小屋情報') }}
-                    </x-nav-link>
-                    
-                    <x-nav-link a href="/questions" :active="request()->routeIs('question')" >
-                        {{ __('Q&A') }}
+                        {{ __('投稿機能') }}
                     </x-nav-link>
                 </div>
             </div>

@@ -12,6 +12,11 @@
         質問箱
     </x-slot>
         <body>
+  　<style>
+        body{
+            margin:20px
+        }
+    </style>
             <h1>Blog Name</h1>
             <form action="/questions" method="POST">
             @csrf
