@@ -31,9 +31,14 @@
                 ---
                     <div class='post'>
                         <a href='/posts/{{$post->id}}'><h2 class='title'>title: {{ $post->title }}</h2></a>
-                        <p>user name: {{ Auth::user()->name }}</p>
+                        @foreach ($users as $user)
+                            @if($user->id == $post->user_id)
+                                <p>投稿者: {{$user->name}}</p>
+                            @endif
+                        @endforeach
                         <p class='body'>body: {{ $post->body }}</p>
                     </div>
+                    <div class="edit"><a href="/posts/{{ $post->id }}/edit">編集</a></div>
                     <form action="/posts/{{ $post->id }}" id="form_{{ $post->id }}" method="post">
                         @csrf
                         @method('DELETE')

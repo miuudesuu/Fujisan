@@ -25,7 +25,6 @@
         @foreach ($comments as $comment)
             @if($post->id == $comment->post_id)
                 <p>コメント: {{$comment->body}}</p>
-                <p>{{$comment->post_id}}</p>
             @endif
         @endforeach
         </div>
