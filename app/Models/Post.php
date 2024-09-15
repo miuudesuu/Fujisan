@@ -29,6 +29,7 @@ class Post extends Model
             'post_category_id',
             'title',
             'body',
+            'image_url',
         ];
 }
 

@@ -20,12 +20,14 @@
             <div class="content__post">
                 <p>本文: {{ $post->body }}</p>
             </div>
+            <div>
+                <img src="{{ $post->image_url }}" alt="画像が読み込めません。">
+            </div>
         </div>
         <div class="comment">
         @foreach ($comments as $comment)
             @if($post->id == $comment->post_id)
                 <p>コメント: {{$comment->body}}</p>
-                <p>{{$comment->post_id}}</p>
             @endif
         @endforeach
         </div>
