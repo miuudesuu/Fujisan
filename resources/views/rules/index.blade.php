@@ -13,10 +13,12 @@
         <body>
     <style>
         body{
-            margin:30px
+            margin:20px
         }
     </style>
-            <h1>Blog Name</h1>
+            <h1>目次</h1>
+            <h2>1,富士山にのぼるひとへ
+            <p></p>
                 <div class='rules'>
                     @foreach($rules as $rule)
                 ---

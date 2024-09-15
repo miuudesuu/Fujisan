@@ -15,11 +15,24 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link a href='/rules'>
+                    
+                    <x-nav-link :href="route('rule.index')"  :active="request()->routeIs('rule.index')">
                         {{ __('初めて登る人へ') }}
+                    </x-nav-link>
+                    
+                    <x-nav-link :href="route('course.index')"  :active="request()->routeIs('course.index')">
+                        {{ __('登山ルート') }}
                     </x-nav-link>
                     <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
                         {{ __('投稿機能') }}
+                    </x-nav-link>
+                    
+                    <x-nav-link :href="route('hut.index')" :active="request()->routeIs('hut.index')" >
+                        {{ __('山小屋情報') }}
+                    </x-nav-link>
+                    
+                    <x-nav-link :href="route('question.index')" :active="request()->routeIs('question.index')" >
+                        {{ __('Q&A') }}
                     </x-nav-link>
                 </div>
             </div>

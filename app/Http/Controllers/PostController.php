@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\PostCategory;
 use App\Models\Comment;
+use App\Models\User;
+use Cloudinary;
 use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
@@ -27,6 +29,10 @@ class PostController extends Controller
     
     public function store(Request $request, Post $post)
     {
+        //cloudinaryへ画像を送信し、画像のURLを$image_urlに代入している
+        $image_url = Cloudinary::upload($request->file('image')->getRealPath())->getSecurePath();
+        dd($image_url);  //画像のURLを画面に表示
+        
         // 現在認証しているユーザーのIDを取得
         $input = $request['post'];
         $id = Auth::id();
