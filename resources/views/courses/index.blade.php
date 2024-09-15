@@ -11,6 +11,11 @@
         courses
     </x-slot>
         <body>
+    <style>
+        body{
+            margin:20px
+        }
+    </style>
             <h1>Blog Name</h1>
             <img src="PC/Desktop/レバテックカレッジ/富士山/全ルート.jpg" alt="登山ルート">
             ログインユーザー：{{ Auth::user()->name }}

@@ -11,7 +11,7 @@
         huts
     </x-slot>
         <body>
-  　<style>
+    <style>
         body{
             margin:20px
         }

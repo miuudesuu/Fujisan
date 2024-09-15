@@ -11,6 +11,11 @@
         rules
     </x-slot>
         <body>
+    <style>
+        body{
+            margin:20px
+        }
+    </style>
             <h1>目次</h1>
             <h2>1,富士山にのぼるひとへ
             <p></p>
