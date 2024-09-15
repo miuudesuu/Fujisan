@@ -13,7 +13,7 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('ホーム') }}
+                        {{ __('Dashboard') }}
                     </x-nav-link>
                     
                     <x-nav-link :href="route('rule.index')"  :active="request()->routeIs('rule.index')">
@@ -23,9 +23,8 @@
                     <x-nav-link :href="route('course.index')"  :active="request()->routeIs('course.index')">
                         {{ __('登山ルート') }}
                     </x-nav-link>
-                    
                     <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
-                        {{ __('富士山投稿') }}
+                        {{ __('投稿機能') }}
                     </x-nav-link>
                     
                     <x-nav-link :href="route('hut.index')" :active="request()->routeIs('hut.index')" >

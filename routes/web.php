@@ -8,7 +8,7 @@ use App\Http\Controllers\RuleController;
 use App\Http\Controllers\HutController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\AnswerController;
-use App\Http\Controllers\CourseController;
+use App\Http\Controllers\WeatherController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -49,11 +49,12 @@ Route::get('/courses', [CourseController::class,'index'])->name('course.index');
 Route::get('/questions', [QuestionController::class,'index'])->name('question.index');
 Route::post('/questions', [QuestionController::class, 'store']);
 Route::get('/questions/create', [QuestionController::class,'create']);
-Route::get('/questions/{question}', [QuestionController::class,'show']);
+Route::post('/questions', [QuestionController::class, 'store']);
+Route::get('/questions/{question}', [QuestionController::class, 'show']);
 Route::get('/questions/{question}/edit', [QuestionController::class, 'edit']);
 Route::put('/questions/{question}',  [QuestionController::class, 'update']);
 Route::delete('/questions/{question}', [QuestionController::class, 'delete']);
-Route::put('/questions/{question}', [QuestionController::class, 'update']);
+
 
 
 Route::get('/answers/create/{question}', [AnswerController::class, 'create']);
