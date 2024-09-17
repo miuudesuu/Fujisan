@@ -23,7 +23,8 @@
         <body>
     <style>
         body{
-            margin:20px
+            margin:20px;
+            background-color: #ccffff;
         }
     </style>
             <h1>Blog Name</h1>

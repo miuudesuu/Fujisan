@@ -24,7 +24,8 @@
         <body>
   　<style>
         body{
-            margin:20px
+            margin:20px;
+            background-color: #ccffff;
         }
     </style>
             <a href='/questions/create'>create</a>

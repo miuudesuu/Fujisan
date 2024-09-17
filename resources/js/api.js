@@ -1,1 +1,1 @@
-console.log("This is api.js.");
+console.log("https://www.jma.go.jp/bosai/forecast/data/forecast/220000.json");

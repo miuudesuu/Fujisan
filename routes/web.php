@@ -10,6 +10,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\WeatherController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\SunController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -63,5 +64,6 @@ Route::post('/answers', [AnswerController::class, 'store']);
 
 Route::get('/weathers', [WeatherController::class,'index'])->name('weather.index');
 
+Route::get('/suns', [SunController::class, 'index']);
 
 require __DIR__.'/auth.php';
