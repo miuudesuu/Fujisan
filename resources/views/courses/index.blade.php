@@ -8,7 +8,9 @@
     </head>
     <x-app-layout>
     <x-slot name="header">
-        courses
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            courses
+        </h2>
     </x-slot>
         <body>
     <style>
@@ -17,6 +19,8 @@
         }
     </style>
             <h1>Blog Name</h1>
+            
+            <p>その1. 吉田ルート</p>
             ログインユーザー：{{ Auth::user()->name }}
         </body>
     </x-app-layout>
