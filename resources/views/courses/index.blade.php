@@ -16,14 +16,14 @@
     <style>
         body{
             margin:20px;
-            background-color: cornsilk;
+            background-color: #ccffff;
         }
 
         .mokuji{
             margin: auto;
             text-align:center;
             border:2px solid black;
-            background-color: beige;
+            background-color: #ccffff;
             padding:10px;
             width:70%;
         }

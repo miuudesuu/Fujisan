@@ -15,8 +15,9 @@
         </div>
     </div>
 <style>
-    body{
-        margin:20px
-    }
+        body{
+            margin:20px;
+            background-color: #ccffff;
+        }
 </style>
 </x-app-layout>
