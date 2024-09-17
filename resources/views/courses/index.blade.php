@@ -24,15 +24,15 @@
             text-align:center;
             border:2px solid black;
             background-color: beige;
-            padding:8px;
+            padding:10px;
             width:70%;
         }
     </style>
             <h2 class="mokuji">
                 <strong>目次</strong><br>
-                
+                <br>
                 １．富士山のルートとは<br>
-                ２．<吉田ルート<br>
+                ２．吉田ルート<br>
                 ３．須走ルート<br>
                 ４．御殿場ルート<br>
                 ５．富士宮ルート<br>
