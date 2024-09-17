@@ -16,7 +16,9 @@
     </script>
     <x-app-layout>
     <x-slot name="header">
-        投稿
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        　投稿
+        </2>
     </x-slot>
         <body>
     <style>

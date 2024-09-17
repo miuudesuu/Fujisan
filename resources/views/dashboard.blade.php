@@ -19,16 +19,4 @@
         margin:20px
     }
 </style>
-        <div class="rules">
-            <a href='/rules'>rules</a>
-        </div>
-        <div class="hut">
-            <a href='/huts'>huts</a>
-        </div>
-        <div class="question">
-            <a href='/questions'>questions</a>
-        </div>
-        <div class="weather">
-            <a href='/weathers'>weathers</a>
-        </div>
 </x-app-layout>

@@ -16,7 +16,7 @@
     </style>
         <h1>Blog Name</h1>
         <form action="/posts" method="POST" enctype="multipart/form-data">
-            @csrf
+        @csrf
             <div class="category">
                  <h2>Category</h2>
                 <select name="post[post_category_id]">

@@ -13,9 +13,8 @@ return new class extends Migration
     {
         Schema::create('answers', function (Blueprint $table) {
             $table->id();
-            $table->string('body', 200);
+            $table->string('body');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

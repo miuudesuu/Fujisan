@@ -21,13 +21,7 @@ class PostCategorySeeder extends Seeder
         ]);
         
         DB::table('post_categories')->insert([
-                'name' => '天気',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-        ]);
-        
-        DB::table('post_categories')->insert([
-                'name' => 'あ',
+                'name' => '登山中',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
         ]);
