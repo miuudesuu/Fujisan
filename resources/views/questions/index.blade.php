@@ -109,6 +109,7 @@
                 <a href='/answers/create/{{$question->id}}'>answers</a><br>
                  @endforeach
             </div>
+            
         </body>
     </x-app-layout>
 </html>

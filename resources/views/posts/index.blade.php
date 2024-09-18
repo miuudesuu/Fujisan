@@ -26,9 +26,58 @@
             margin:20px;
             background-color: #ccffff;
         }
+        
+        .btn-square-slant {
+          text-align:center;
+          margin: 20px; /* ボタンの下にスペースを追加 */
+          display: inline-block;
+          position: relative;
+          padding: 0.5em 1.4em;
+          text-decoration: none;
+          background: #668ad8;/*ボタン色*/
+          color: #FFF;
+          border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+          border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+        }
+        
+        .btn-square-slant:before {  
+          content: " ";
+          position: absolute;
+          bottom: -5px;
+          left: -1px;
+          width: 0;
+          height: 0;
+          border-width: 0 6px 6px 0px;
+          border-style: solid;
+          border-color: transparent;
+          border-bottom-color: #FFF;
+        }
+        .btn-square-slant:after {  
+          content: " ";
+          position: absolute;
+          top: -1px;
+          right: -5px;
+          width: 0;
+          height: 0;
+          border-width: 0px 6px 6px 0px;
+          border-style: solid;
+          border-color: #FFF;
+          border-bottom-color: transparent;
+        }
+        
+        .btn-square-slant:active {
+          /*ボタンを押したとき*/
+          border:none;
+          -webkit-transform: translate(6px,6px);
+          transform: translate(6px,6px);
+        }
+        
+        .btn-square-slant:active:after, .btn-square-slant:active:before {
+          content: none;/*ボタンを押すと線が消える*/
+        }
     </style>
             <h1>Blog Name</h1>
-            <a href='/posts/create'>create</a>
+            <a href='/posts/create'class="btn-square-slant">create</a>
             <div class='posts'>
                 @foreach ($posts as $post)
                 ---
@@ -45,8 +94,10 @@
                     <br>
                 <a href='/comments/create/{{$post->id}}'>commnents</a><br>
                  @endforeach
-               ログインユーザー：{{ Auth::user()->name }}
             </div>
         </body>
     </x-app-layout>
+    <footer>              
+    ログインユーザー：{{ Auth::user()->name }}
+</footer>
 </html>
