@@ -26,15 +26,58 @@
         body{
             margin:20px;
             background-color: #ccffff;
+                }
+
+        .btn-square-slant {
+          text-align:center;
+          margin: 20px; /* ボタンの下にスペースを追加 */
+          display: inline-block;
+          position: relative;
+          padding: 0.5em 1.4em;
+          text-decoration: none;
+          background: #668ad8;/*ボタン色*/
+          color: #FFF;
+          border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+          border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+        }
+        
+        .btn-square-slant:before {  
+          content: " ";
+          position: absolute;
+          bottom: -5px;
+          left: -1px;
+          width: 0;
+          height: 0;
+          border-width: 0 6px 6px 0px;
+          border-style: solid;
+          border-color: transparent;
+          border-bottom-color: #FFF;
+        }
+        .btn-square-slant:after {  
+          content: " ";
+          position: absolute;
+          top: -1px;
+          right: -5px;
+          width: 0;
+          height: 0;
+          border-width: 0px 6px 6px 0px;
+          border-style: solid;
+          border-color: #FFF;
+          border-bottom-color: transparent;
+        }
+        
+        .btn-square-slant:active {
+          /*ボタンを押したとき*/
+          border:none;
+          -webkit-transform: translate(6px,6px);
+          transform: translate(6px,6px);
+        }
+        
+        .btn-square-slant:active:after, .btn-square-slant:active:before {
+          content: none;/*ボタンを押すと線が消える*/
         }
     </style>
-            <a href='/questions/create'>create</a>
                 <div class="relative">
-                    <div class="absolute left-4 top-3 text-gray-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                        </svg>
-                    </div>
                     <div class="absolute right-4 top-3 text-blue-500 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
@@ -42,7 +85,9 @@
                     </div>
                    <input class="w-full rounded-full hover:shadow-lg focus:shadow-lg focus:outline-0 p-2.5 border pl-10" type="text" placeholder="Search">
                 </div>
+                <br>
             <div class='questions'>
+                <a href='/questions/create' class="btn-square-slant">create</a>
                 @foreach ($questions as $question)
                 ---
                     <div class='question'>
@@ -63,8 +108,10 @@
                     </div>
                 <a href='/answers/create/{{$question->id}}'>answers</a><br>
                  @endforeach
-               ログインユーザー：{{ Auth::user()->name }}
             </div>
         </body>
     </x-app-layout>
 </html>
+<footer>
+    ログインユーザー：{{ Auth::user()->name }}
+</footer>
