@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <html lang="ja">
-            <meta charset="utf-8">
-            <title>Blog</title>
-            <!-- Fonts -->
-            <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
     <title>Weather Forecast</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <style>
-        body{
-            margin:40px
+        body {
+            margin: 0; /* 外側の余白をゼロに */
+            padding: 20px; /* 内側の余白を追加 */
+            background-color: #ccffff;
         }
         table {
-            width: 100%;
+            text-align:center;
+            width: 90%;
             border-collapse: collapse;
         }
         th, td {
@@ -22,24 +23,29 @@
         th {
             background-color: #CCFFFF;
         }
-       .meyasu {
-            font-size: 1.1em; /* フォントサイズを少し大きく */
-            color: #333; /* テキストの色を設定 */
-            margin: 20px 0; /* 上下にスペースを追加 */
-            padding: 10px; /* 内側のスペースを追加 */
-            border: 1px solid #ddd; /* 枠線を追加 */
-            background-color: #f9f9f9; /* 背景色を設定 */
+        .meyasu {
+            font-size: 1.1em;
+            color: #333;
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
         }
     </style>
 </head>
-
 <body>
+    <x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+         天気予報
+        </2>
+    </x-slot>
     <h1>富士山頂の天気</h1>
     <p>ここでは、富士山頂の3時間ごと5日間の天気がわかります。ですが、山の天気は変わりやすく、天気予報があてにならないときもあるので<strong>要注意！！！</strong></p>
     
     <p class='meyasu'>以下の時は登らないようにしてください。<br>
-        ・天気 が あまり良くない日☂（雨が強すぎると登るのも下山も大変です。）<br>
-        ・降水確率 が 高い日（上記同様）<br>
+        ・天気があまり良くない日☂（雨が強すぎると登るのも下山も大変です。）<br>
+        ・降水確率が高い日（上記同様）<br>
         ・雷の可能性がある日⚡（富士山では、雷に打たれて死亡者が出たこともあります。絶対にやめましょう。）
     </p>
     <table>
@@ -49,7 +55,7 @@
                 <th>気温 (°C)</th>
                 <th>天気</th>
                 <th>降水確率 (%)</th>
-                <th>風速(m/s)</th>
+                <th>風速 (m/s)</th>
                 <th>雷の可能性</th>
             </tr>
         </thead>
@@ -72,5 +78,6 @@
             @endforeach
         </tbody>
     </table>
+    </x-app-layout>
 </body>
 </html>

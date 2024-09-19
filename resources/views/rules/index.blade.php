@@ -41,8 +41,11 @@
                     </div>
                     @endforeach
                 </div>
-                ログインユーザー：{{ Auth::user()->name }}
             </div>
         </body>
+        
+    <footer>
+        ログインユーザー：{{ Auth::user()->name }}
+    </footer>
     </x-app-layout>
 </html>
