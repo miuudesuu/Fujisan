@@ -31,6 +31,11 @@
             border: 1px solid #ddd;
             background-color: #f9f9f9;
         }
+        h1{
+         padding:0.5em; /*上下左右の余白*/
+         background:#DEEBF7; /*背景色*/
+         border-bottom:solid 3px #2F5597; /*線の種類 太さ 色*/
+        }
     </style>
 </head>
 <body>
@@ -40,7 +45,7 @@
          天気予報
         </2>
     </x-slot>
-    <h1>富士山頂の天気</h1>
+    <h1><strong>富士山頂の天気</strong></h1>
     <p>ここでは、富士山頂の3時間ごと5日間の天気がわかります。ですが、山の天気は変わりやすく、天気予報があてにならないときもあるので<strong>要注意！！！</strong></p>
     
     <p class='meyasu'>以下の時は登らないようにしてください。<br>
