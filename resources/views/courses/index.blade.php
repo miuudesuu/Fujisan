@@ -8,9 +8,9 @@
     </head>
     <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h1 class="font-semibold text-xl text-gray-800 leading-tight">
             courses
-        </h2>
+        </h1>
     </x-slot>
         <body>
     <style>
@@ -85,6 +85,15 @@
             color: #333;
             text-decoration: none;
         }
+        h2{
+         padding:0.5em; /*上下左右の余白*/
+         background:#DEEBF7; /*背景色*/
+         border-bottom:solid 3px #2F5597; /*線の種類 太さ 色*/
+        }
+        .inyo{
+            text-align: right;
+            text-size:small;
+        }
     </style>
     <br>
     <!--目次-->
@@ -101,10 +110,14 @@
             </ol>
     </div><br>
     
-    <p>富士山登山には4種類のルートがある。それが、<br>
-    ・吉田ルート
-    ・須走ルート
-    ・御殿場ルート</p>
+    <h2><strong>1. 富士山のルートとは</strong></h2><br>
+        <p>
+            富士山には、4つのルートがあり、それぞれの入り口がある。以下の地図はすべてのコースを表しており、　　
+            黄色：吉田ルート<br>
+            赤色：須走ルート<br>
+            緑色：御殿場ルート<br>
+            青色：富士宮ルート　に分かれている。(以下、富士山オフィシャルサイト引用)<br>
+        </p>
 
     <!--コース写真-->
     <div class="photo">
@@ -115,6 +128,46 @@
             echo '<img src="' . htmlspecialchars($imageUrl) . '" alt="外部画像" style="max-width: 100%; height: auto;">';
         ?>
     </div><br>
+    
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
+    
+    <!--コース別説明-->
+    <h2><strong>２．吉田ルート</strong></h2><br>
+        <p>
+            ・出発点：　富士スバルライン（山梨県）<br>
+            ・特徴：　登りの登山道に山小屋が多い、逆に下りの下山道は山小屋が少ない。<br>
+            ・公衆トイレ：　5合目、6合目、富士山頂、下山道7合目<br>
+        </p>
+    <div class='photo'>
+                <?php
+        // 画像ファイルのパス
+            $imageUrl2 = 'https://fujisan-climb.jp/trails/yoshida/m8bimq0000003suz-img/m8bimq0000003td5.jpg'; // 外部の画像URLを指定
+            
+            echo '<img src="' . htmlspecialchars($imageUrl2) . '" alt="外部画像" style="max-width: 50%; height: auto; text-align: right;">';
+        ?>
+    </div>
+    
+        <!--コース別説明-->
+    <h2><strong>３．須走ルート</strong></h2><br>
+        <p>
+            ・出発点：　須走5合目(静岡県)<br>
+            ・特徴：　標高の高いところまで樹林帯が広がっており、登山中の日差しから守られる。<br>
+                    　火山砂利の下山道を一直線に下る「砂走り」がある。<br>
+            ・公衆トイレ：　5合目、6合目、富士山頂、下山道7合目<br>
+        </p>
+    <div class='photo'>
+                <?php
+        // 画像ファイルのパス
+            $imageUrl3 = 'https://fujisan-climb.jp/trails/subashiri/m8bimq000000386y-img/m8bimq00000038pv.jpg'; // 外部の画像URLを指定
+            
+            echo '<img src="' . htmlspecialchars($imageUrl3) . '" alt="外部画像" style="max-width: auto; height: 50%; text-align: right;">';
+        ?>
+    </div>
 
 
 
