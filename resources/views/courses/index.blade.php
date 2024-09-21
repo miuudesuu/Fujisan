@@ -94,6 +94,9 @@
             text-align: right;
             text-size:small;
         }
+        p{
+            margin:20px;  
+        }
     </style>
     <br>
     <!--目次-->
@@ -110,9 +113,9 @@
             </ol>
     </div><br>
     
-    <h2><strong>1. 富士山のルートとは</strong></h2><br>
+    <h2><strong>１．富士山のルートとは</strong></h2>
         <p>
-            富士山には、4つのルートがあり、それぞれの入り口がある。以下の地図はすべてのコースを表しており、　　
+            富士山には、4つのルートがあり、それぞれの出発点・特徴がある。以下の地図はすべてのコースを表しており、　　
             黄色：吉田ルート<br>
             赤色：須走ルート<br>
             緑色：御殿場ルート<br>
@@ -136,39 +139,105 @@
         </a>
     </p>
     
-    <!--コース別説明-->
-    <h2><strong>２．吉田ルート</strong></h2><br>
+    <!--吉田ルート-->
+    <h2><strong>２．吉田ルート</strong></h2>
         <p>
             ・出発点：　富士スバルライン（山梨県）<br>
-            ・特徴：　登りの登山道に山小屋が多い、逆に下りの下山道は山小屋が少ない。<br>
+            ・到着点：　久須志神社側（北東側）<br>
+            ・特徴：　登りの登山道に山小屋が多い、逆に下りの下山道は山小屋が少ない。4つのルートの中で一番登山客が多い。<br>
             ・公衆トイレ：　5合目、6合目、富士山頂、下山道7合目<br>
         </p>
     <div class='photo'>
-                <?php
+        <?php
         // 画像ファイルのパス
             $imageUrl2 = 'https://fujisan-climb.jp/trails/yoshida/m8bimq0000003suz-img/m8bimq0000003td5.jpg'; // 外部の画像URLを指定
             
             echo '<img src="' . htmlspecialchars($imageUrl2) . '" alt="外部画像" style="max-width: 50%; height: auto; text-align: right;">';
         ?>
     </div>
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/yoshida/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
     
-        <!--コース別説明-->
-    <h2><strong>３．須走ルート</strong></h2><br>
+    <!--須走ルート-->
+    <h2><strong>３．須走ルート</strong></h2>
         <p>
-            ・出発点：　須走5合目(静岡県)<br>
+            ・出発点：　須走5合目(静岡県小山町)<br>
+            ・到着点：　久須志神社側（北東側）<br>
             ・特徴：　標高の高いところまで樹林帯が広がっており、登山中の日差しから守られる。<br>
-                    　火山砂利の下山道を一直線に下る「砂走り」がある。<br>
+            　　　　火山砂利の下山道を一直線に下る「砂走り」がある。<br>
             ・公衆トイレ：　5合目、6合目、富士山頂、下山道7合目<br>
         </p>
     <div class='photo'>
-                <?php
+        <?php
         // 画像ファイルのパス
             $imageUrl3 = 'https://fujisan-climb.jp/trails/subashiri/m8bimq000000386y-img/m8bimq00000038pv.jpg'; // 外部の画像URLを指定
             
             echo '<img src="' . htmlspecialchars($imageUrl3) . '" alt="外部画像" style="max-width: auto; height: 50%; text-align: right;">';
         ?>
     </div>
-
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/subashiri/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
+    
+    <!--御殿場ルート-->
+    <h2><strong>４．御殿場ルート</strong></h2>
+        <p>
+            ・出発点：　御殿場口新5合目(静岡県御殿場市)<br>
+            ・到着点：　浅間大社奥宮側（南側）<br>
+            ・特徴：　頂上までの標高差が大きく、距離が長い。<br>
+            　　 　　山小屋が少なく、登山者も少ない。<br>
+            ・公衆トイレ：　5合目、富士山頂<br>
+        </p>
+    <div class='photo'>
+        <?php
+        // 画像ファイルのパス
+            $imageUrl4 = 'https://fujisan-climb.jp/trails/gotenba/m8bimq0000003iea-img/m8bimq0000003iwt.jpg'; // 外部の画像URLを指定
+            
+            echo '<img src="' . htmlspecialchars($imageUrl4) . '" alt="外部画像" style="max-width: auto; height: 50%; text-align: right;">';
+        ?>
+    </div>
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/gotenba/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
+    
+    <!--富士宮ルート-->
+    <h2><strong>５．富士宮ルート</strong></h2>
+        <p>
+            ・出発点：　富士宮口5合目(静岡県富士宮市)<br>
+            ・到着点：　浅間大社奥宮側（南側）<br>
+            ・特徴：　頂上までの距離が短いが、岩場が多い。<br>
+            　　 　　吉田ルートに次いで登山者が多い。<br>
+            ・公衆トイレ：　5合目、頂上<br>
+        </p>
+    <div class='photo'>
+        <?php
+        // 画像ファイルのパス
+            $imageUrl5 = 'https://fujisan-climb.jp/trails/gotenba/m8bimq0000003iea-img/m8bimq0000003iwt.jpg'; // 外部の画像URLを指定
+            
+            echo '<img src="' . htmlspecialchars($imageUrl5) . '" alt="外部画像" style="max-width: auto; height: 50%; text-align: right;">';
+        ?>
+    </div>
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/gotenba/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
+    
+    <h2><strong>６．最後に</strong></h2>
+        <p>
+            
+        </p>
 
 
         </body>
