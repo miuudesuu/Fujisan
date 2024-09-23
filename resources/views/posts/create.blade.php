@@ -42,7 +42,7 @@
             <input type="submit" value="store">
         </form>
         <div class="footer">
-            <a href="/">戻る</a>
+            <a href="/posts">戻る</a>
         </div>
     </body>
     </x-app-layout>

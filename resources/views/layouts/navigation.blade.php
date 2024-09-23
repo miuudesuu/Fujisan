@@ -25,16 +25,16 @@
                         {{ __('登山ルート') }}
                     </x-nav-link>
                     
-                    <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
-                        {{ __('富士山投稿') }}
-                    </x-nav-link>
-                    
                     <x-nav-link :href="route('hut.index')" :active="request()->routeIs('hut.index')" >
                         {{ __('山小屋情報') }}
                     </x-nav-link>
                     
                     <x-nav-link :href="route('weather.index')" :active="request()->routeIs('weather.index')" >
                         {{ __('天気予報') }}
+                    </x-nav-link>
+                    
+                    <x-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
+                        {{ __('富士山投稿') }}
                     </x-nav-link>
                     
                     <x-nav-link :href="route('question.index')" :active="request()->routeIs('question.index')" >

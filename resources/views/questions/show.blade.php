@@ -8,6 +8,12 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
+    <x-app-layout>
+        <x-slot name="header">
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+             質問詳細
+            </2>
+        </x-slot>
   　<style>
         body{
             margin:20px
@@ -33,3 +39,4 @@
             <a href="/questions">戻る</a>
         </div>
     </body>
+    </x-app-layout>
