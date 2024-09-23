@@ -23,45 +23,55 @@
             margin: auto;
         }
 
-
         .toc-002 {
-            margin-bottom: 20px;
-            border: 2px solid #63b4ee;
-            margin: auto;
-            
+            margin-bottom: 30px;
+            border: 2px solid #77bff3;
+            border-radius: 3px;
+            margin:auto;
             width:80%;
-            }
+        }
         
         .toc-002 div {
             display: flex;
-            text-align:center;
             justify-content: center;
             align-items: center;
             margin: 0;
             padding: 10px 0;
-            background-color: #63b4ee;
+            background-color: #77bff3;
             color: #fff;
             font-weight: 600;
             font-size: 1.1em;
         }
         
-        .toc-002 div::before {
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            margin-right: 5px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 4H21V6H8V4ZM3 3.5H6V6.5H3V3.5ZM3 10.5H6V13.5H3V10.5ZM3 17.5H6V20.5H3V17.5ZM8 11H21V13H8V11ZM8 18H21V20H8V18Z' fill='%23fff'%3E%3C/path%3E%3C/svg%3E");
-            content: '';
+        .toc-002 label::after {
+            margin-left: 7px;
+            font-weight: 500;
+            font-size: .7em;
+            color: #fff;
+            content: "[開く]";
+            cursor: pointer;
+        }
+        
+        .toc-002:has(:checked) label::after {
+            content: "[閉じる]";
+        }
+        
+        .toc-002 input {
+            display: none;
         }
         
         .toc-002 ol {
             list-style-type: decimal;
             margin: 0;
             overflow: hidden;
-            width:70%;
         }
         
         .toc-002 > ol {
+            height: 0;
+        }
+        
+        .toc-002:has(:checked) > ol {
+            height: auto;
             padding: 1em 1em 1em 3em;
         }
         
@@ -81,7 +91,6 @@
         }
         
         .toc-002 a {
-            margin:10px;
             color: #333;
             text-decoration: none;
         }
@@ -94,29 +103,40 @@
             text-align: right;
             text-size:small;
         }
+        p{
+            margin:20px;  
+        }
+        a {
+            color: blue; /* 青色に設定 */
+        }
+        a:hover {
+            text-decoration: underline; /* ホバー時に下線を表示する場合 */
+        }
     </style>
+    
     <br>
     <!--目次-->
     <div class="toc-002">
         <div>
                 目次
+                <label><input type="checkbox"/></label>
         </div>
             <ol>
                 <li><a href="#1">富士山のルートとは</a></li>
-                <li><a href="#">吉田ルート</a></li>
-                <li><a href="#">須走ルート</a></li>
-                <li><a href="#">御殿場ルート</a></li>
-                <li><a href="#">富士宮ルート</a></li>
+                <li><a href="#2">吉田ルート</a></li>
+                <li><a href="#3">須走ルート</a></li>
+                <li><a href="#4">御殿場ルート</a></li>
+                <li><a href="#5">富士宮ルート</a></li>
             </ol>
     </div><br>
     
-    <h2><strong>1. 富士山のルートとは</strong></h2><br>
+    <h2 id="1"><strong>１．富士山のルートとは</strong></h2>
         <p>
-            富士山には、4つのルートがあり、それぞれの入り口がある。以下の地図はすべてのコースを表しており、　　
-            黄色：吉田ルート<br>
-            赤色：須走ルート<br>
-            緑色：御殿場ルート<br>
-            青色：富士宮ルート　に分かれている。(以下、富士山オフィシャルサイト引用)<br>
+            富士山には、4つのルートがあり、それぞれの出発点・特徴がある。以下の地図はすべてのコースを表しており、<br>
+            〇黄色：吉田ルート<br>
+            〇赤色：須走ルート<br>
+            〇緑色：御殿場ルート<br>
+            〇青色：富士宮ルート　に分かれている。(以下、富士山オフィシャルサイト引用)<br>
         </p>
 
     <!--コース写真-->
@@ -136,39 +156,111 @@
         </a>
     </p>
     
-    <!--コース別説明-->
-    <h2><strong>２．吉田ルート</strong></h2><br>
+    <!--吉田ルート-->
+    <h2 id="2"><strong>２．吉田ルート</strong></h2>
         <p>
             ・出発点：　富士スバルライン（山梨県）<br>
-            ・特徴：　登りの登山道に山小屋が多い、逆に下りの下山道は山小屋が少ない。<br>
+            ・到着点：　久須志神社側（北東側）<br>
+            ・所要時間：　登り…約6時間　下り…約4時間<br>
+            ・特徴：　登りの登山道に山小屋が多い、逆に下りの下山道は山小屋が少ない。4つのルートの中で一番登山客が多い。<br>
             ・公衆トイレ：　5合目、6合目、富士山頂、下山道7合目<br>
+            <span style="color:red;">！注意！こちらのルートは有料化されたため、事前の予約か、当日受付の1000人以上の枠に入る必要があります。（2000円/1人）</span><br>
+            ・予約は<span style="color:blue;"><a href="https://www.fujisan-climb.jp/info/20240510_yoshida_trail_reservation.html">こちら</a></span>のサイトから(山小屋宿泊予約をされている方は必要ありません。)
         </p>
     <div class='photo'>
-                <?php
+        <?php
         // 画像ファイルのパス
             $imageUrl2 = 'https://fujisan-climb.jp/trails/yoshida/m8bimq0000003suz-img/m8bimq0000003td5.jpg'; // 外部の画像URLを指定
             
             echo '<img src="' . htmlspecialchars($imageUrl2) . '" alt="外部画像" style="max-width: 50%; height: auto; text-align: right;">';
         ?>
     </div>
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/yoshida/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
     
-        <!--コース別説明-->
-    <h2><strong>３．須走ルート</strong></h2><br>
+    <!--須走ルート-->
+    <h2 id="3"><strong>３．須走ルート</strong></h2>
         <p>
-            ・出発点：　須走5合目(静岡県)<br>
+            ・出発点：　須走5合目(静岡県小山町)<br>
+            ・到着点：　久須志神社側（北東側）<br>
+            ・所要時間：　登り…約6時間　下り…約3時間<br>
             ・特徴：　標高の高いところまで樹林帯が広がっており、登山中の日差しから守られる。<br>
-                    　火山砂利の下山道を一直線に下る「砂走り」がある。<br>
+            　　　　火山砂利の下山道を一直線に下る「砂走り」がある。<br>
             ・公衆トイレ：　5合目、6合目、富士山頂、下山道7合目<br>
         </p>
     <div class='photo'>
-                <?php
+        <?php
         // 画像ファイルのパス
             $imageUrl3 = 'https://fujisan-climb.jp/trails/subashiri/m8bimq000000386y-img/m8bimq00000038pv.jpg'; // 外部の画像URLを指定
             
             echo '<img src="' . htmlspecialchars($imageUrl3) . '" alt="外部画像" style="max-width: auto; height: 50%; text-align: right;">';
         ?>
     </div>
-
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/subashiri/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
+    
+    <!--御殿場ルート-->
+    <h2 id="4"><strong>４．御殿場ルート</strong></h2>
+        <p>
+            ・出発点：　御殿場口新5合目(静岡県御殿場市)<br>
+            ・到着点：　浅間大社奥宮側（南側）<br>
+            ・所要時間：　登り…約7時間　下り…約3時間<br>
+            ・特徴：　頂上までの標高差が大きく、距離が長い。<br>
+            　　 　　山小屋が少なく、登山者も少ない。<br>
+            ・公衆トイレ：　5合目、富士山頂<br>
+        </p>
+    <div class='photo'>
+        <?php
+        // 画像ファイルのパス
+            $imageUrl4 = 'https://fujisan-climb.jp/trails/gotenba/m8bimq0000003iea-img/m8bimq0000003iwt.jpg'; // 外部の画像URLを指定
+            
+            echo '<img src="' . htmlspecialchars($imageUrl4) . '" alt="外部画像" style="max-width: auto; height: 50%; text-align: right;">';
+        ?>
+    </div>
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/gotenba/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
+    
+    <!--富士宮ルート-->
+    <h2 id="5"><strong>５．富士宮ルート</strong></h2>
+        <p>
+            ・出発点：　富士宮口5合目(静岡県富士宮市)<br>
+            ・到着点：　浅間大社奥宮側（南側）<br>
+            ・所要時間：　登り…約5時間　下り…約3時間<br>
+            ・特徴：　頂上までの距離が短いが、岩場が多い。<br>
+            　　 　　吉田ルートに次いで登山者が多い。<br>
+            ・公衆トイレ：　5合目、頂上<br>
+        </p>
+    <div class='photo'>
+        <?php
+        // 画像ファイルのパス
+            $imageUrl5 = 'https://fujisan-climb.jp/trails/gotenba/m8bimq0000003iea-img/m8bimq0000003iwt.jpg'; // 外部の画像URLを指定
+            
+            echo '<img src="' . htmlspecialchars($imageUrl5) . '" alt="外部画像" style="max-width: auto; height: 50%; text-align: right;">';
+        ?>
+    </div>
+    <!--引用-->
+    <p class="inyo">
+        <a href="https://fujisan-climb.jp/trails/gotenba/index.html" >
+            引用：富士登山オフィシャルサイト
+        </a>
+    </p>
+    
+    <h2><strong>６．最後に</strong></h2>
+        <p>
+            
+        </p>
 
 
         </body>
