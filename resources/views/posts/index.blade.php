@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Blog</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{('css/app.css') }}" rel="stylesheet">
+
     </head>
     <script>
         function deletePost(id) {
@@ -77,7 +79,8 @@
         }
     </style>
             <h1>Blog Name</h1>
-            <a href='/posts/create'class="btn-square-slant">create</a>
+            <a href='/posts/create'class="btn-square-slant">create</a><br>
+             <a href='/posts/create'class="custom-button">create</a>
             <div class='posts'>
                 @foreach ($posts as $post)
                 ---
