@@ -41,14 +41,22 @@ class PostController extends Controller
         $post->fill($input)->save();
         return redirect('/posts/' . $post->id);
     }
+    
     public function update(Request $request, Post $post)
     {
         $input_post = $request['post'];
+    
+        // 画像がアップロードされた場合、Cloudinaryにアップロード
+        if ($request->file('image')) {
+            $image_url = Cloudinary::upload($request->file('image')->getRealPath())->getSecurePath();
+            $input_post['image_url'] = $image_url; // 画像URLを追加
+        }
+    
+        // 投稿を更新
         $post->fill($input_post)->save();
     
         return redirect('/posts/' . $post->id);
     }
-    
     public function edit(Post $post, PostCategory $post_category)
     {
        
