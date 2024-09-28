@@ -5,12 +5,9 @@
     <title>Weather Forecast</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="{{('css/app.css') }}" rel="stylesheet">
     <style>
-        body {
-            margin: 0; /* 外側の余白をゼロに */
-            padding: 20px; /* 内側の余白を追加 */
-            background-color: #ccffff;
-        }
+
         table {
             text-align:center;
             width: 90%;

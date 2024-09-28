@@ -30,6 +30,7 @@ class Post extends Model
             'title',
             'body',
             'image_url',
+            'create_at',
         ];
 }
 

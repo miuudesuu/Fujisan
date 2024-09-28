@@ -1,3 +1,7 @@
+<head>
+    <link href="{{('css/app.css') }}" rel="stylesheet">
+</head>
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -14,10 +18,4 @@
             </div>
         </div>
     </div>
-<style>
-        body{
-            margin:20px;
-            background-color: #ccffff;
-        }
-</style>
 </x-app-layout>

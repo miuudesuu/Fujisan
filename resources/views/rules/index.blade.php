@@ -5,6 +5,7 @@
         <title>Blog</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{('css/app.css') }}" rel="stylesheet">
     </head>
     <x-app-layout>
     <x-slot name="header">
@@ -14,10 +15,6 @@
     </x-slot>
         <body>
     <style>
-        body{
-            margin:20px;
-            background-color: #ccffff;
-        }
         .toc-002 {
             margin-bottom: 30px;
             border: 2px solid #77bff3;

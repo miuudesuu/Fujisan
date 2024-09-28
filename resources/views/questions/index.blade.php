@@ -5,6 +5,7 @@
         <title>Blog</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{('css/app.css') }}" rel="stylesheet">
     </head>
     <script>
         function deleteQuestion(id) {
@@ -23,10 +24,6 @@
     </x-slot>
         <body>
   　<style>
-        body{
-            margin:20px;
-            background-color: #ccffff;
-                }
 
         .btn-square-slant {
           text-align:center;
