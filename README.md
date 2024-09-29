@@ -22,44 +22,44 @@
 <a href="https://fujisan-270b5f16309e.herokuapp.com/">https://fujisan-270b5f16309e.herokuapp.com/</a>
 
 ## 使用技術
-<ol>
+<ul>
     <li>バックエンド</li>
-        <ol>
+        <ul>
             <li>laravel</li>
                 <ol>
                     <li>標準(MVCモデル)</li>
                     <li>Breeze</li>
                 </ol>
             <li></li>
-        </ol>
+        </ul>
     <li>フロントエンド</li>
-        <ol>
+        <ul>
             <li>HTML</li>
             <li>SCSS</li>
             <li>JavaScript</li>
             <li>TailwindCSS</li>
             <li>Flowrift</li>
-        </ol>
+        </ul>
     <li>インフラストラクチャー</li>
-        <ol>
+        <ul>
             <li>AWS</li>
-                <ol>
+                <ul>
                     <li>MariaDB</li>
-                </ol>
-        </ol>
+                </ul>
+        </ul>
     <li>IDE</li>
-        <ol>
+        <ul>
             <li>AWS</li>
-                <ol>
+                <ul>
                     <li>Cloud9</li>
-                </ol>
-        </ol>
+                </ul>
+        </ul>
     <li>バージョン管理・CL/CD</li>
-        <ol>
+        <ul>
             <li>GitHub</li>
             <li>Heroku</li>
-        </ol>
-</ol>
+        </ul>
+</ul>
 
 ## ER図
 
