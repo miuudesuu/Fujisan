@@ -16,6 +16,7 @@
     <li>富士山に関するQ&A</li>
     <li>富士山の天気予報</li>
 </ul>
+
 ## APP URL
 
 <a href="https://fujisan-270b5f16309e.herokuapp.com/">https://fujisan-270b5f16309e.herokuapp.com/</a>
