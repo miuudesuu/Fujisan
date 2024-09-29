@@ -6,6 +6,8 @@
     <title>Posts</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="{{('css/app.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <script>
     function deletePost(id) {
@@ -43,7 +45,6 @@
                     <img src="{{ $post->image_url }}" loading="lazy" alt="投稿写真" class="h-full w-full object-cover object-center" />
                 @endif
             </div>
-
 
             <p class="sm:text-lg">{{ $post->body }}</p><br>
 

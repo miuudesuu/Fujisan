@@ -6,6 +6,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{('css/app.css') }}" rel="stylesheet">
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <script>
         function deleteQuestion(id) {
@@ -24,7 +25,6 @@
     </x-slot>
         <body>
   　<style>
-
         .btn-square-slant {
           text-align:center;
           margin: 20px; /* ボタンの下にスペースを追加 */
@@ -62,7 +62,6 @@
           border-color: #FFF;
           border-bottom-color: transparent;
         }
-        
         .btn-square-slant:active {
           /*ボタンを押したとき*/
           border:none;
@@ -74,38 +73,41 @@
           content: none;/*ボタンを押すと線が消える*/
         }
     </style>
-                <div class="relative">
-                    <div class="absolute right-4 top-3 text-blue-500 cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
-                        </svg>
-                    </div>
-                   <input class="w-full rounded-full hover:shadow-lg focus:shadow-lg focus:outline-0 p-2.5 border pl-10" type="text" placeholder="Search">
-                </div>
-                <br>
-            <div class='questions'>
-                <a href='/questions/create' class="btn-square-slant">create</a>
-                @foreach ($questions as $question)
-                ---
-                    <div class='question'>
-                        <a href='/questions/{{$question->id}}'>
-                            <h2 class='title'><a href="/questions/{{ $question->id }}">title: {{ $question->title }}</h2></a>
-                        @foreach($question_categories as $question_category)
-                            @if($question_category->id == $question->question_catgory_id)
-                                <p>category:  {{$question_category->name}}</p>
-                            @endif
-                        @endforeach
-                        <p class='body'>body: {{ $question->body }}</p>
-                        <div class="edit"><a href="/questions/{{ $question->id }}/edit">編集</a></div>
-                        <form action="/questions/{{ $question->id }}" id="form_{{ $question->id }}" method="post">
-                            @csrf
-                            @method('DELETE')
-                            <button type="button" onclick="deleteQuestion({{ $question->id }})">delete</button> 
-                        </form>
-                    </div>
-                <a href='/answers/create/{{$question->id}}'>answers</a><br>
-                 @endforeach
+    
+        <div class="bg-white py-6 sm:py-8 lg:py-12">
+          <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+            <!-- text - start -->
+            <div class="mb-10 md:mb-16">
+              <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Q&A</h2>
+        
+              <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">富士山・富士登山についてわからないこと、気になることをどんどん質問しよう！<br>解答がわかるものがあったら、回答してみよう。質問者も助かります ^ ^</p>
             </div>
+            <!-- text - end -->
+            <div class="grid gap-4 sm:grid-cols-2 md:gap-8">
+                <!-- question - start -->
+                @foreach ($questions as $question)
+                <div class="rounded-lg bg-gray-100 p-5">
+                    <div class="mb-4 flex items-center justify-between gap-4 border-b pb-4">
+                        <h3 class="font-semibold text-indigo-500 sm:text-lg md:text-xl"><div class='title'><a href="/questions/{{ $question->id }}">{{ $question->title }}</a></div></h3>
+                    <span class="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-300 text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    </div>
+                    <p class="text-gray-500">{{ $question->body }}</p><br>
+                    <div class="flex w-full justify-end">
+                        <a href='/answers/create/{{$question->id}}' class="rounded border px-2 py-1 text-sm text-gray-500">回答する</a>
+                    </div>
+                </div>
+                @endforeach
+              <!-- question - end -->
+            </div>
+                <div class="flex justify-center w-full">
+                    <a href='/questions/create' class="btn-square-slant">create</a>
+                </div>  
+            </div>
+        </div>
             
         </body>
     </x-app-layout>
