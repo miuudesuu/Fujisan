@@ -8,7 +8,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## 機能
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
@@ -26,7 +26,46 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 <a href="https://fujisan-270b5f16309e.herokuapp.com/">https://fujisan-270b5f16309e.herokuapp.com/</a>
 
-## 
+## 使用技術
+<ol>
+    <li>バックエンド</li>
+        <ol>
+            <li>laravel</li>
+                <ol>
+                    <li>標準(MVCモデル)</li>
+                    <li>Breeze</li>
+                </ol>
+            <li></li>
+        </ol>
+    <li>フロントエンド</li>
+        <ol>
+            <li>HTML</li>
+            <li>SCSS</li>
+            <li>JavaScript</li>
+            <li>TailwindCSS</li>
+            <li>Flowrift</li>
+        </ol>
+    <li>インフラストラクチャー</li>
+        <ol>
+            <li>AWS</li>
+                <ol>
+                    <li>MariaDB</li>
+                </ol>
+        </ol>
+    <li>IDE</li>
+        <ol>
+            <li>AWS</li>
+                <ol>
+                    <li>Cloud9</li>
+                </ol>
+        </ol>
+    <li>バージョン管理・CL/CD</li>
+        <ol>
+            <li>GitHub</li>
+            <li>Heroku</li>
+        </ol>
+</ol>
+
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
