@@ -77,11 +77,11 @@
               <div class="category">
                   <h2>Category</h2>
                   <select name="post[post_category_id]">
-                      @foreach ($post_categories as $post_category)
-                          <option value="{{ $post_category->id }}" >
-                              {{ $post_category->name }}
-                          </option>
-                      @endforeach
+                    @foreach ($post_categories as $post_category)
+                      <option value="{{ $post_category->id }}" >
+                        {{ $post_category->name }}
+                      </option>
+                    @endforeach
                   </select>
               </div><br>
             <div class="sm:col-span-2">
