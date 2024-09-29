@@ -80,7 +80,7 @@
             <div class="mb-10 md:mb-16">
               <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Q&A</h2>
         
-              <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">富士山・富士登山についてわからないこと、気になることをどんどん質問しよう！<br>解答がわかるものがあったら、回答してみよう。質問者も助かります ^ ^</p>
+              <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">富士山・富士登山についてわからないこと、気になることをどんどん質問しよう！<br>（匿名なので気軽に投稿してね！）<br>解答がわかるものがあったら、回答してみよう。質問者も助かります ^ ^</p>
             </div>
             <!-- text - end -->
             <div class="grid gap-4 sm:grid-cols-2 md:gap-8">
