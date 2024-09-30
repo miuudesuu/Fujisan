@@ -96,6 +96,9 @@
         p{
             margin:20px;
         }
+        a:hover {
+            text-decoration: underline; /* ホバー時に下線を表示する場合 */
+        }
     </style>
         <!--目次-->
     <div class="toc-002">

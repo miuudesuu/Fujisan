@@ -21,6 +21,8 @@ class WeatherController extends Controller
 
         $data = $response->getBody()->getContents();
         $data = json_decode($data, true);
+        
+        \Log::info('Weather API Response:', $data);
 
         return view('weathers.index', ['forecastData' => $data]);
     }
