@@ -62,7 +62,7 @@
 </ul>
 
 ## ER図
-<img src="images/ER.png" alt="ER Diagram">
+<img src="[images/ER.png" alt="ER Diagram](https://imgur.com/a/4rcrx7e)">
 
 ## AWS図
 
