@@ -6,7 +6,7 @@
     </head>
     <x-app-layout>
     <x-slot name="header">
-        comment_create
+        コメント作成
     </x-slot>
     <body>
   　<style>
@@ -64,7 +64,7 @@
             <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
                 <!-- text - start -->
                 <div class="mb-10 md:mb-16">
-                  <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">富士山投稿</h2>
+                  <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">コメント投稿</h2>
             
                   <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">投稿に対する、共感や感想などをコメントしよう！<br>投稿者がハッピーになるような、うれしくなるようなコメントをしましょう！
                 </div>
