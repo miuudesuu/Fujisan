@@ -62,7 +62,8 @@
 </ul>
 
 ## ER図
-<img scr="public/image/ER.png" alt="ER図">
+<img src="images/ER.png" alt="ER Diagram">
+
 ## AWS図
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
