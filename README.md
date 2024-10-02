@@ -63,6 +63,7 @@
 
 ## ER図
 <img src="public/image/ER図.jpg">
+<img src="public/image/インフラ.jpg">
 
 ## AWS図
 
