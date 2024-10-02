@@ -63,10 +63,10 @@
 
 ## ER図
 <img src="public/image/ER図.jpg">
-<img src="public/image/インフラ.jpg">
+
 
 ## AWS図
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<img src="public/image/インフラ.jpg">
 
 ## 操作画面
