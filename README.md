@@ -63,7 +63,7 @@
 
 ## ER図
 <img src="https://imgur.com/a/4rcrx7e">
-<img src="Fuji Tozan/Fujitozan/public/image/ER図">
+<img src=Fujitozan/public/image/ER図">
 
 ## AWS図
 
