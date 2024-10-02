@@ -26,10 +26,10 @@
     <li>バックエンド</li>
         <ul>
             <li>laravel</li>
-                <ol>
+                <ul>
                     <li>標準(MVCモデル)</li>
                     <li>Breeze</li>
-                </ol>
+                </ul>
             <li></li>
         </ul>
     <li>フロントエンド</li>
@@ -63,7 +63,7 @@
 
 ## ER図
 <img src="https://imgur.com/a/4rcrx7e">
-<img src="ER図.drawio.html">
+<img src="Fuji Tozan/Fujitozan/public/image/ER図">
 
 ## AWS図
 
