@@ -22,6 +22,6 @@ class CommentController extends Controller
         $input['user_id'] = $id;
         $comment->fill($input)->save();
         // return redirect('/comments/' . $comment->id);
-        return redirect('/');
+        return redirect()->route('post.index')->with('success', 'Comment posted successfully.');
     }
 }
