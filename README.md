@@ -1,4 +1,4 @@
-🗻Enjoy　Mt,Fuji.
+🗻Enjoy　Fuji.
 <img src="public/images/見出し.jpg">
 
 <p align="center">
