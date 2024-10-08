@@ -62,11 +62,11 @@
 </ul>
 
 ## ER図
-<img src="public/image/ER図.jpg">
+<img src="public/images/ER図.jpg">
 
 
 ## AWS図
 
-<img src="public/image/インフラ.jpg">
+<img src="public/images/インフラ.jpg">
 
 ## 操作画面
