@@ -1,12 +1,6 @@
 Enjoy　Fuji🗻
 <img src="public/images/見出し.jpg">
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+このアプリでは、富士山登山に関する知識を得たり、富士山の写真を投稿したり、富士山に関する質問などをして富士山をみんなで楽しむアプリです。
 
 ## 機能
 
