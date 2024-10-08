@@ -39,7 +39,7 @@ Route::middleware('auth')->group(function () {
 });
 Route::controller(CommentController::class)->group(function(){
     Route::get('/comments/create/{post}','create')->name('create'); 
-    Route::post('/comments','store')->name('store');
+    Route::post('/posts','store')->name('store');
 });
 
 Route::get('/rules', [RuleController::class,'index'])->name('rule.index');
