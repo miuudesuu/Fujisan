@@ -24,7 +24,6 @@ Enjoy　Fuji🗻
                     <li>標準(MVCモデル)</li>
                     <li>Breeze</li>
                 </ul>
-            <li></li>
         </ul>
     <li>フロントエンド</li>
         <ul>
