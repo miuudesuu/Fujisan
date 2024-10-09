@@ -108,7 +108,7 @@
               <!-- question - end -->
             </div>
                 <div class="flex justify-center w-full">
-                    <a href='/questions/create' class="btn-square-slant">create</a>
+                    <a href='/questions/create' class="btn-square-slant">質問する</a>
                 </div>  
             </div>
         </div>
