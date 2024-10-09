@@ -63,4 +63,4 @@ Enjoy　Fuji🗻
 <img src="public/images/インフラ.jpg">
 
 ## 操作画面
-[操作方法](public/images/operation_document)
+[操作方法]("public/images/operation_document")
