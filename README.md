@@ -63,3 +63,4 @@ Enjoy　Fuji🗻
 <img src="public/images/インフラ.jpg">
 
 ## 操作画面
+[PDFファイルをこちらで表示](.//to/your-file.pdf)
