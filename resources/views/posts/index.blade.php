@@ -9,6 +9,11 @@
       @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <x-app-layout>
+    <x-slot name="header">
+      <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+          富士山投稿
+      </h2>
+    </x-slot>
     <body>
     <style>
     

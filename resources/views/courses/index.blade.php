@@ -254,13 +254,9 @@
             引用：富士登山オフィシャルサイト
         </a>
     </p>
-    
-    <h2><strong>６．最後に</strong></h2>
-        <p>
-            
-        </p>
-
-
+        <div class="flex items-start justify-end gap-8 sm:items-center text-right">
+            <a href="#" class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">トップへ戻る</a>
+        </div>
         </body>
     <footer>ログインユーザー：{{ Auth::user()->name}}</footer>
     </x-app-layout>
