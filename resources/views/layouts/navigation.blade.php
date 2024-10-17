@@ -93,8 +93,31 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+                {{ __('ホーム') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('rule.index')"  :active="request()->routeIs('rule.index')">
+                {{ __('初めて登る人へ') }}
+            </responsive-nav-link>
+            
+            <responsive-nav-link :href="route('course.index')"  :active="request()->routeIs('course.index')">
+                {{ __('登山ルート') }}
+            </responsive-nav-link>
+            
+            <responsive-nav-link :href="route('hut.index')" :active="request()->routeIs('hut.index')" >
+                {{ __('山小屋情報') }}
+            </responsive-nav-link>
+            
+            <responsive-nav-link :href="route('weather.index')" :active="request()->routeIs('weather.index')" >
+                {{ __('天気予報') }}
+            </responsive-nav-link>
+            
+            <responsive-nav-link :href="route('post.index')" :active="request()->routeIs('post.index')">
+                {{ __('富士山投稿') }}
+            </responsive-nav-link>
+            
+            <responsive-nav-link :href="route('question.index')" :active="request()->routeIs('question.index')" >
+                {{ __('Q&A') }}
+            </responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->

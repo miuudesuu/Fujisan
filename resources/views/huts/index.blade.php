@@ -177,33 +177,42 @@
                         <li>富士山頂山口屋</li>
                             ・ホームページ：<span style="color:blue;"><a href="http://www.fujisan-yamaguchiya.com/stay.html">富士山頂　山口屋</a></span><br>
                             ・トイレ：なし（近くに共同トイレあり）<br>
-                            ・宿泊：あり（事前予約必要・キャンセル料無料）<br>
-                            ・食事：あり
-                            ・お土産：あり
+                            ・宿泊：あり（完全事前予約制・キャンセル料無料）<br>
+                            ・食事：あり<br>
+                            ・お土産：あり<br>
                         <br>
                         <li>富士山頂扇屋</li>
                             ・インスタグラム：<span style="color:blue;"><a href="https://www.instagram.com/chojo_ogiya3776?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">頂上　扇屋</a></span><br>
+                            ・宿泊：なし<br>
                             ・トイレ：なし（近くに共同トイレあり）<br>
                             ・食事：あり<br>
                             ・お土産：あり<br>
                     </ol>
-                <h3 id="2-1">２－２．八合五勺</h3>
+                <h3 id="2-2">２－２．八合五勺</h3>
                     <ol>
                         <li>御来光館</li>
                             ・ホームページ：<span style="color:blue;"><a href="https://www.bing.com/ck/a?!&&p=af007d206e5b00898fd55e6193461c0097e151db6ab205199a005274c9a8c682JmltdHM9MTcyODk1MDQwMA&ptn=3&ver=2&hsh=4&fclid=38b67b03-71ca-61a8-3a39-6a8770b060fa&psq=%e5%be%a1%e6%9d%a5%e5%85%89%e9%a4%a8&u=a1aHR0cHM6Ly9nb3JhaWtvdWthbi5qcC8&ntb=1">富士山山小屋　御来光館</a></span><br>
-                            ・宿泊：あり（事前予約性・キャンセル料有料）
+                            ・宿泊：あり（キャンセル料有料）<br>
                             ・仮眠スペース：あり<br>
                             ・食事：あり<br>
                     </ol>
-                <h3 id="2-1">２－３．本八合目</h3>
+                <h3 id="2-3">２－３．本八合目</h3>
                     <ol>
-                        <li>トモエ館</li>
-                            ・ホームページ：<span style="color:blue;"><a href="https://www.bing.com/ck/a?!&&p=af007d206e5b00898fd55e6193461c0097e151db6ab205199a005274c9a8c682JmltdHM9MTcyODk1MDQwMA&ptn=3&ver=2&hsh=4&fclid=38b67b03-71ca-61a8-3a39-6a8770b060fa&psq=%e5%be%a1%e6%9d%a5%e5%85%89%e9%a4%a8&u=a1aHR0cHM6Ly9nb3JhaWtvdWthbi5qcC8&ntb=1">富士山山小屋　御来光館</a></span><br>
-                            ・宿泊：あり（事前予約性・キャンセル料有料）
+                        <li>本八合目　トモエ館</li>
+                            ・ホームページ：<span style="color:blue;"><a href="https://tomoekan.com/">八合目　トモエ館</a></span><br>
+                            ・宿泊：あり（個室あり・キャンセル料有料）<br>
                             ・仮眠スペース：あり<br>
-                            ・食事：あり<br>
-                        <li>江戸屋</li>
-                        <li>富士山ホテル</li>
+                            ・トイレ：あり<br>
+                        <br>
+                        <li>本八合目　江戸屋</li>
+                            ・ホームページ：<span style="color:blue;"><a href="https://fujisan-edoya.com/">江戸屋　富士山</a></span><br>
+                            ・宿泊：あり（個室あり・キャンセル料有料）<br>
+                            ・トイレ：あり<br>
+                        <br>
+                        <li>本八合目　富士山ホテル</li>
+                            ・ホームページ：<span style="color:blue;"><a href="https://www.fujisanhotel.com/">本八合目　富士山ホテル</a></span><br>
+                            ・宿泊：あり（完全予約制・キャンセル料有料）<br>
+                            ・トイレ：あり(200円)
                     </ol>
             </p>
         </div>
