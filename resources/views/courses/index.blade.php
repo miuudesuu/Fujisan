@@ -186,8 +186,7 @@
             ・出発点：　須走5合目(静岡県小山町)<br>
             ・到着点：　久須志神社側（北東側）<br>
             ・所要時間：　登り…約6時間　下り…約3時間<br>
-            ・特徴：　標高の高いところまで樹林帯が広がっており、登山中の日差しから守られる。<br>
-            　　　　火山砂利の下山道を一直線に下る「砂走り」がある。<br>
+            ・特徴：　標高の高いところまで樹林帯が広がっており、登山中の日差しから守られる。火山砂利の下山道を一直線に下る「砂走り」がある。<br>
             ・公衆トイレ：　5合目、6合目、富士山頂、下山道7合目<br>
         </p>
     <div class='photo'>
@@ -211,8 +210,7 @@
             ・出発点：　御殿場口新5合目(静岡県御殿場市)<br>
             ・到着点：　浅間大社奥宮側（南側）<br>
             ・所要時間：　登り…約7時間　下り…約3時間<br>
-            ・特徴：　頂上までの標高差が大きく、距離が長い。<br>
-            　　 　　山小屋が少なく、登山者も少ない。<br>
+            ・特徴：　頂上までの標高差が大きく、距離が長い。山小屋が少なく、登山者も少ない。<br>
             ・公衆トイレ：　5合目、富士山頂<br>
         </p>
     <div class='photo'>
@@ -236,8 +234,7 @@
             ・出発点：　富士宮口5合目(静岡県富士宮市)<br>
             ・到着点：　浅間大社奥宮側（南側）<br>
             ・所要時間：　登り…約5時間　下り…約3時間<br>
-            ・特徴：　頂上までの距離が短いが、岩場が多い。<br>
-            　　 　　吉田ルートに次いで登山者が多い。<br>
+            ・特徴：　頂上までの距離が短いが、岩場が多い。吉田ルートに次いで登山者が多い。<br>
             ・公衆トイレ：　5合目、頂上<br>
         </p>
     <div class='photo'>
@@ -255,7 +252,7 @@
         </a>
     </p>
         <div class="flex items-start justify-end gap-8 sm:items-center text-right">
-            <a href="#" class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">トップへ戻る</a>
+            <a href="#" class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">上へ戻る</a>
         </div>
         </body>
     <footer>ログインユーザー：{{ Auth::user()->name}}</footer>

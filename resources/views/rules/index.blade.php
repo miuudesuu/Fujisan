@@ -134,12 +134,12 @@
             <strong>〇水</strong><br>
             　高山病の予防には水分補給が必要です。1人1-2Lは必要になります。山小屋があるコースは営業時間内なら購入することも可能です。<br>
             <strong>〇雨具</strong><br>
-            　標高が高いところの天気は変わりやすいです。予報とは違う雨が降ってくる可能性があるので、晴れの予報でも持っていきましょう。上下別れている者が好ましいです。<br>
+            　標高が高いところの天気は変わりやすいです。予報とは違う雨が降ってくる可能性があるので、晴れの予報でも持っていきましょう。上下別れているものが好ましいです。<br>
             <strong>〇ゴミ袋</strong><br>
             　山にごみ箱はありません。山小屋で許可をもらって捨てない限りは自分で持ち帰りましょう。<br>
             <br>
             <strong>＋α</strong><br>
-            <strong>〇酸素管</strong><br>
+            <strong>〇酸素缶</strong><br>
             　これはマストではないですが、初めての登山などの人は持っていくべきです。高山病になった際に、これを吸うと、少し楽になります。<br>
             　しかし、高山病は登っても治らないので、ひどくなった場合、早い段階で降りるのが最善です。<br>
             <strong>〇耳栓・アイマスク</strong><br>
@@ -149,7 +149,7 @@
         <h2 id="3"><strong>３．服装</strong></h2>
         <p>
             <strong>〇帽子</strong><br>
-             標高が高いため、太陽もその分近いです。帽子は必須。<br>
+            　標高が高いため、太陽もその分近いです。帽子は必須。<br>
             <strong>〇サングラス</strong><br>
             　なくてもいいですが、まぶしいのが苦手な人は持っておくべきです。<br>
             <strong>〇防寒性のある服</strong><br>
@@ -195,7 +195,7 @@
                     @endforeach
                 </div>
                 <div class="flex items-start justify-end gap-8 sm:items-center text-right">
-                    <a href="#" class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">トップへ戻る</a>
+                    <a href="#" class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">上へ戻る</a>
                 </div>
             </div>
 

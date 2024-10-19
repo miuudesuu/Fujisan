@@ -184,7 +184,7 @@
             ・御殿場ルート<br>
             ・富士宮ルート<br>
             に分けて、標高が高い順に紹介しようと思う。(以下の画像は、富士山オフィシャルサイト引用)<br>
-             ※わかる範囲で情報を表示している。詳細を知りたい場合は、山小屋のホームページを閲覧お願いします。
+             ※わかる範囲で情報を表示している。詳細を知りたい場合は、山小屋のホームページをご覧ください。
         </p>
         <!--コース写真-->
         <div class="photo">
@@ -293,14 +293,14 @@
                         ・ホームページ：<span style="color:blue;"><a href="https://www.fujisanhotel.com/" target="_blank">蓬莱館</a></span><br>
                         ・宿泊：あり（キャンセル料有料）<br>
                         ・トイレ：あり<br>
-                        ・売店：あり
+                        ・売店：あり<br>
                     <br>
                     <li>太子館</li>
                         ・ホームページ：<span style="color:blue;"><a href="https://www.mfi.or.jp/~taisikan/" target="_blank">太子館</a></span><br>
                         ・宿泊：あり（キャンセル料有料）<br>
-                        ・トイレ：あり
-                        ・ツアー：あり
-                        ・救護所：あり
+                        ・トイレ：あり<br>
+                        ・ツアー：あり<br>
+                        ・救護所：あり<br>
                 </ol>
             <h3 id="3-2" class="heading-27">３－２．七合目</h3>
                 <ol>
@@ -536,8 +536,8 @@
                         ・ホームページ：<span style="color:blue;"><a href="https://fujisanchou.com/" target="_blank">頂上富士館</a></span><br>
                         ・宿泊：あり<br>
                         ・トイレ：あり<br>
-                        ・食堂：あり
-                        ・売店：あり
+                        ・食堂：あり<br>
+                        ・売店：あり<br>
                 </ol>
             <h3 id="6-2" class="heading-27">６－２．九合五勺</h3>
                 <ol>
@@ -551,7 +551,7 @@
                     <li>万年雪山荘</li>
                         ・ホームページ：<span style="color:blue;"><a href="https://mannnennyuki.wixsite.com/mannennyuki" target="_blank">万年雪山荘</a></span><br>
                         ・宿泊：あり<br>
-                        ・食堂：あり
+                        ・食堂：あり<br>
                         ・トイレ：あり<br>
                 </ol>
             <h3 id="6-4" class="heading-27">６－４．八合目</h3>
@@ -576,7 +576,7 @@
                     <li>御来光山荘</li>
                         ・ホームページ：<span style="color:blue;"><a href="http://www.goraikousansou.com/" target="_blank">御来光山荘</a></span><br>
                         ・宿泊：あり（個室あり）<br>
-                        ・食堂：あり
+                        ・食堂：あり<br>
                         ・トイレ：あり<br>
                 </ol>
             <h3 id="6-7" class="heading-27">６－７．六合目</h3>
@@ -584,14 +584,14 @@
                     <li>宝永山荘</li>
                         ・ホームページ：<span style="color:blue;"><a href="http://houeisansou.com/" target="_blank">宝永山荘</a></span><br>
                         ・宿泊：あり<br>
-                        ・食堂：あり
+                        ・食堂：あり<br>
                         ・トイレ：あり<br>
                 </ol>
 
 
         <!--ボタン-->
         <div class="flex items-start justify-end gap-8 sm:items-center text-right">
-            <a href="#" class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">トップへ戻る</a>
+            <a href="#" class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">上へ戻る</a>
         </div>
     
                     ログインユーザー：{{ Auth::user()->name }}
